@@ -1,4 +1,6 @@
- /* ================= RESET ================= */
+/* =========================================================
+   RESET
+========================================================= */
 
 * {
     margin: 0;
@@ -13,7 +15,9 @@ body {
 }
 
 
-/* ================= HEADER ================= */
+/* =========================================================
+   HEADER
+========================================================= */
 
 .header {
     height: 60px;
@@ -24,7 +28,6 @@ body {
     background: white;
     border-bottom: 1px solid #f1f1f1;
 }
-
 
 /* Logo */
 
@@ -81,13 +84,13 @@ body {
 
 .header-icons small {
     font-size: 9px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 }
 
 
-/* ================= HERO ================= */
-
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero {
     height: 240px;
@@ -150,7 +153,7 @@ body {
 /* Hero Image */
 
 .hero-image {
-    width: 75%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -164,7 +167,9 @@ body {
 }
 
 
-/* ================= CATEGORY ================= */
+/* =========================================================
+   CATEGORY
+========================================================= */
 
 .category {
     height: 62px;
@@ -182,7 +187,7 @@ body {
 .categories a {
     text-decoration: none;
     font-size: 8px;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
     color: #555;
 }
 
@@ -191,9 +196,9 @@ body {
 }
 
 
-/* ================= PRODUCTS ================= */
-
-/* ================= PRODUCTS ================= */
+/* =========================================================
+   PRODUCTS
+========================================================= */
 
 .products {
     max-width: 1600px;
@@ -206,7 +211,7 @@ body {
 }
 
 
-/* ================= PRODUCT CARD ================= */
+/* Product Card */
 
 .product-card {
     position: relative;
@@ -220,9 +225,6 @@ body {
     transition: all 0.4s ease;
 }
 
-
-/* Card Hover */
-
 .product-card:hover {
     transform: translateY(-8px);
 
@@ -230,7 +232,7 @@ body {
 }
 
 
-/* ================= PRODUCT IMAGE ================= */
+/* Product Image */
 
 .product-image {
     width: 100%;
@@ -242,27 +244,22 @@ body {
     background: #f4f4f4;
 }
 
-
 .product-image img {
     width: 100%;
     height: 100%;
 
     object-fit: cover;
-
     display: block;
 
     transition: transform 0.5s ease;
 }
-
-
-/* Image Zoom */
 
 .product-card:hover .product-image img {
     transform: scale(1.08);
 }
 
 
-/* ================= OVERLAY ================= */
+/* Product Overlay */
 
 .card-overlay {
     position: absolute;
@@ -283,7 +280,6 @@ body {
 
     transition: 0.4s ease;
 }
-
 
 .product-card:hover .card-overlay {
     opacity: 1;
@@ -308,21 +304,18 @@ body {
     transition: 0.3s ease;
 }
 
-
 .card-overlay button:hover {
     background: #7d1a16;
     color: #fff;
 }
 
 
-/* ================= PRODUCT INFO ================= */
+/* Product Info */
 
 .product-info {
     padding: 18px 15px 20px;
-
     text-align: center;
 }
-
 
 .product-info h3 {
     margin-bottom: 7px;
@@ -335,7 +328,6 @@ body {
     color: #444;
 }
 
-
 .product-info p {
     margin-bottom: 10px;
 
@@ -346,7 +338,6 @@ body {
     color: #999;
 }
 
-
 .product-info span {
     font-size: 13px;
 
@@ -356,7 +347,7 @@ body {
 }
 
 
-/* ================= SOLD LABEL ================= */
+/* Sold Label */
 
 .sold {
     position: absolute;
@@ -376,27 +367,38 @@ body {
 
     letter-spacing: 0.5px;
 }
- 
-/* ================= RESPONSIVE ================= */
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
 
 @media (max-width: 768px) {
 
-     .header {
+    /* Header */
+
+    .header {
         height: auto;
+
         padding: 18px;
+
         flex-wrap: wrap;
+
         gap: 15px;
     }
 
     .logo {
         width: 100%;
+
         text-align: center;
     }
 
     .navbar {
         width: 100%;
+
         justify-content: center;
+
         flex-wrap: wrap;
+
         gap: 15px;
     }
 
@@ -417,12 +419,15 @@ body {
 
     .hero-text {
         width: 100%;
+
         height: 50%;
+
         padding: 35px 25px 10px;
     }
 
     .hero-image {
         width: 100%;
+
         height: 50%;
     }
 
@@ -431,14 +436,19 @@ body {
 
     .category {
         height: auto;
+
         padding: 20px;
+
         gap: 20px;
+
         align-items: flex-start;
+
         flex-direction: column;
     }
 
     .categories {
         flex-wrap: wrap;
+
         gap: 15px;
     }
 
@@ -447,7 +457,9 @@ body {
 
     .products {
         grid-template-columns: 1fr 1fr;
+
         padding: 20px 15px 40px;
+
         gap: 15px;
     }
 
@@ -455,36 +467,610 @@ body {
         height: 220px;
     }
 
+
+    /* About */
+
+    .about-flower {
+        flex-direction: column;
+
+        padding: 60px 25px;
+
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+
+    .about-content h2,
+    .section-heading h2,
+    .occasion-content h2,
+    .newsletter h2 {
+        font-size: 30px;
+    }
+
+
+    /* Features */
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 50px 20px;
+
+        gap: 35px 15px;
+    }
+
+
+    /* Collection */
+
+    .collection {
+        padding: 60px 20px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card {
+        height: 350px;
+    }
+
+
+    /* Occasions */
+
+    .occasions {
+        flex-direction: column;
+    }
+
+    .occasion-content,
+    .occasion-image {
+        width: 100%;
+    }
+
+    .occasion-content {
+        padding: 60px 25px;
+    }
+
+    .occasion-image {
+        height: 350px;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial {
+        padding: 60px 20px;
+    }
+
+    .review-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Newsletter */
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+    }
+
+    .subscribe button {
+        padding: 15px;
+    }
+
+
+    /* Footer */
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 0 25px 40px;
+
+        gap: 40px 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 20px 25px;
+    }
 }
 
-@media (max-width: 1024px) {
+/* ================= ABOUT ================= */
 
-    .navbar {
-        gap: 15px;
-    }
+.about-flower {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 40px;
+    gap: 80px;
+}
 
-    .logo {
-        width: auto;
-    }
+.about-image {
+    width: 50%;
+    height: 420px;
+    overflow: hidden;
+}
 
-    .header-icons {
-        width: auto;
-    }
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .hero-text {
-        width: 45%;
-    }
+.about-content {
+    width: 50%;
+}
 
-    .hero-image {
-        width: 55%;
-    }
+.about-content span,
+.section-heading span,
+.occasion-content > span,
+.newsletter span {
+    color: #e47572;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
 
-    .products {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.about-content h2,
+.section-heading h2,
+.occasion-content h2,
+.newsletter h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #444;
+    margin: 15px 0 20px;
+}
+
+.about-content p {
+    font-family: Georgia, serif;
+    color: #888;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.about-content button {
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: 1px solid #7d1a16;
+    background: #7d1a16;
+    color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.about-content button:hover {
+    background: white;
+    color: #7d1a16;
 }
 
 
+/* ================= FEATURES ================= */
+
+.features {
+    background: #f8f5f4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 8%;
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-box i {
+    color: #e47572;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.feature-box h3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    font-family: Georgia, serif;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.7;
+}
 
 
- 
+/* ================= COLLECTION ================= */
+
+.collection {
+    padding: 90px 40px;
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #999;
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+.collection-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.collection-card {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.collection-card:hover img {
+    transform: scale(1.08);
+}
+
+.collection-card div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,.7));
+    color: white;
+}
+
+.collection-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.collection-card p {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+
+/* ================= OCCASIONS ================= */
+
+.occasions {
+    display: flex;
+    min-height: 500px;
+    background: #f7f3f2;
+}
+
+.occasion-content {
+    width: 50%;
+    padding: 80px 8%;
+}
+
+.occasion-content p {
+    color: #888;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 430px;
+}
+
+.occasion-image {
+    width: 50%;
+}
+
+.occasion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.occasion-list {
+    margin-top: 35px;
+}
+
+.occasion-list div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid #ddd;
+    padding: 13px 0;
+}
+
+.occasion-list strong {
+    color: #e47572;
+    font-size: 11px;
+}
+
+.occasion-list span {
+    color: #555;
+    font-size: 12px;
+}
+
+
+/* ================= TESTIMONIAL ================= */
+
+.testimonial {
+    padding: 90px 40px;
+    background: white;
+}
+
+.review-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    padding: 35px 25px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+.stars {
+    color: #e47572;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.review-card p {
+    font-family: Georgia, serif;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.review-card h4 {
+    margin-top: 20px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter {
+    background: #f6f0ee;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    color: #888;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.subscribe input {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-family: Georgia, serif;
+}
+
+.subscribe button {
+    width: 30%;
+    border: none;
+    background: #7d1a16;
+    color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #302a29;
+    color: white;
+    padding-top: 65px;
+}
+
+.footer-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px 55px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+}
+
+.footer-about h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.footer-about p {
+    color: #aaa;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: 260px;
+    margin-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    transition: .3s;
+}
+
+.social-icons i:hover {
+    background: #e47572;
+    border-color: #e47572;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.footer-links a:hover {
+    color: #e47572;
+}
+
+.footer-contact p {
+    color: #aaa;
+    font-size: 11px;
+    margin-bottom: 13px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4b4443;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 9px;
+}
+
+
+/* ================= NEW RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .about-flower {
+        flex-direction: column;
+        padding: 60px 25px;
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+
+    .about-content h2,
+    .section-heading h2,
+    .occasion-content h2,
+    .newsletter h2 {
+        font-size: 30px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 20px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card {
+        height: 350px;
+    }
+
+    .occasions {
+        flex-direction: column;
+    }
+
+    .occasion-content,
+    .occasion-image {
+        width: 100%;
+    }
+
+    .occasion-content {
+        padding: 60px 25px;
+    }
+
+    .occasion-image {
+        height: 350px;
+    }
+
+    .review-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 25px 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 25px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+    }
+
+}
+
